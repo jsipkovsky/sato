@@ -7,7 +7,7 @@ app = Flask(__name__)
 port = int(os.environ["PORT"])
 # port = '5000'
 
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['POST'])
 def index():
   data = json.loads(request.get_data())
 
