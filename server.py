@@ -12,7 +12,7 @@ def index():
   #data = json.loads(request.get_data())
 
   # FETCH THE CRYPTO NAME
-  #crypto_name = data['conversation']['memory']['crypto']['raw']
+  contact_id = data['conversation']['memory']['ContractID']['raw']
 
   # FETCH BTC/USD/EUR PRICES
   #r = requests.get("https://min-api.cryptocompare.com/data/price?fsym="+crypto_name+"&tsyms=BTC,USD,EUR")
@@ -20,7 +20,7 @@ def index():
   headers = {'content-type': 'application/json'}
   # headers = { 'Authorization' : 'Token ' + token }
   aa = str(133)
-  r = requests.get("https://my307428.crm.ondemand.com/sap/c4c/odata/v1/contract/ContractCollection?$filter=ID%20eq%20%27" + aa + "%27&$format=json", auth=('mpospisil', 'Oblacek123'), json={"key": "value"})
+  r = requests.get("https://my307428.crm.ondemand.com/sap/c4c/odata/v1/contract/ContractCollection?$filter=ID%20eq%20%27" + contact_id + "%27&$format=json", auth=('mpospisil', 'Oblacek123'), json={"key": "value"})
 
   #ss = r.json()
   #json_data = json.loads(r.text)
