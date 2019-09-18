@@ -7,8 +7,9 @@ app = Flask(__name__)
 port = int(os.environ["PORT"])
 # port = '5000'
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET'])
 def index():
+  print(json.loads(request.get_data()))
   data = json.loads(request.get_data())
 
   # FETCH THE CRYPTO NAME
