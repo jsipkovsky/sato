@@ -9,7 +9,7 @@ port = int(os.environ["PORT"])
 
 @app.route('/', methods=['GET'])
 def index():
-  #data = json.loads(request.get_data())
+  data = json.loads(request.get_data())
 
   # FETCH THE CRYPTO NAME
   contact_id = data['conversation']['memory']['ContractID']['raw']
