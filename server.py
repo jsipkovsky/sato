@@ -36,7 +36,7 @@ def index():
     status=200,
     replies=[{
       'type': 'text',
-      'content': 'Processing type of your Contract ' + str(contact_id) + ' is ' + str(bbb) + '.'
+      'content': cont 
       #'content': 'The price of %s is %f BTC and %f USD' % (crypto_name, r.json()['BTC'], r.json()['USD'])
     }]
   )
