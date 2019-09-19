@@ -29,7 +29,7 @@ def index():
   aaa = r.json() # ["BuyerPartyMainContactPartyID"]
   
   cont = 'Contract ' + str(contact_id) + ' does not exist in the System, can you try again?'
-  if bbb == 'SRCO':
+  if len(bbb) > 2:
     cont = 'Processing type of your Contract ' + str(contact_id) + ' is ' + str(bbb) + '.'
 
   return jsonify(
