@@ -30,7 +30,7 @@ def index():
   
   cont = 'Contract ' + str(contact_id) + ' does not exist in the System, can you try again?'
   if len(bbb) > 2:
-    cont = 'Processing type of your Contract ' + str(contact_id) + ' is ' + str(bbb) + '.'
+    cont = 'Your Order ' + str(contact_id) + ' will be delivered on Monday, 27th of March.'
 
   return jsonify(
     status=200,
