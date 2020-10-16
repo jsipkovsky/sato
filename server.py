@@ -12,7 +12,7 @@ def index():
  
   
 
-  cont = 'Your Order ' + str(contact_id) + ' will be delivered on Monday, 27th of March.'
+  cont = 'Your Order 133 will be delivered on Monday, 27th of March.'
 
   return jsonify(
     status=200,
